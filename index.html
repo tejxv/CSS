@@ -2,20 +2,22 @@
 <html>
 
 <head>
-    <title>@tejxv&nbsp;×&nbsp;CSS3 Powered Hover Effects</title>
+    <title>Tejas&nbsp;×&nbsp;CSS3 Powered Hover Effects</title>
     <meta name="description" content="CSS Hover Effects by @tejxv">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap&effect=anaglyph|fire-animation" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+
     <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/AmplifyLow/01/master/Resources/Site%20Resources/Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/AmplifyLow/01/master/Resources/Site%20Resources/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/AmplifyLow/01/master/Resources/Site%20Resources/Favicon/favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <style>
     html {
-        min-height: 100%;
+        min-height: 100vh;
     }
 
     body {
-        min-height: 100%;
+        min-height: 100vh;
         text-align: center;
         color: black;
         font-size: 1.5rem;
@@ -42,7 +44,7 @@
         margin-top: 30px;
         margin-bottom: 0px;
         transition: all 1s cubic-bezier(.25, 1, .25, 1);
-        transition-delay: 0s;
+        transition-delay: .1s;
         cursor: none;
         /*cursor: url(https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/232/reversed-hand-with-middle-finger-extended_1f595.png), auto;*/
     }
@@ -61,9 +63,11 @@
     .banner {
         max-width: 100%;
         width: 500px;
-        color: black;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        color: gold;
+        text-shadow: 4.5px -2px 0px black;
+        background-color: black;
+        padding-top: 5px;
+        padding-bottom: 5px;
         padding-left: 2px;
         padding-right: 2px;
     }
@@ -74,7 +78,7 @@
 
     .banner:hover:before {
         color: gold;
-        content: "× G O L D W A T E R ×";
+        content: "× × ×";
         background-color: black;
         text-shadow: 4.5px -2px 0px black;
     }
@@ -115,9 +119,10 @@
 
     .spotify:hover {
         box-shadow: 20px 20px 0px 0px black,
-                    20px 20px 0px 0px black,
-                    20px 20px 0px 1000px gold;
+            20px 20px 0px 0px black,
+            20px 20px 0px 1000px gold;
         border-radius: 0px;
+        -webkit-border-radius: 0px;
     }
 
     .button {
@@ -137,11 +142,11 @@
     }
 
     .socials {
-        width: 100%;
+        width: 500px;
         display: inline-block;
         vertical-align: middle;
         border: 0px solid black;
-        padding-top: 20px;
+        padding-top: 0px;
         font-size: 1rem;
         text-align: center;
         transition: all 2s cubic-bezier(.25, 1, .25, 1);
@@ -150,7 +155,7 @@
     .desktop {
         font-size: 10px;
         padding-top: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
 
     .yt {
@@ -197,10 +202,89 @@
         text-align: left;
         max-width: 500px;
         width: 100%;
-        letter-spacing: -1px;
+        letter-spacing: -.85px;
 
     }
+
+    .twitter {
+        width: 500px;
+        padding: 0px 0px;
+        background-color: black;
+        display: block;
+        vertical-align: bottom;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        box-shadow: 30px 0px 50px rgba(0, 0, 0, .35),
+            0px 30px 50px rgba(0, 0, 0, .35),
+            -30px 0px 50px rgba(0, 0, 0, .35);
+        transition: all 1s cubic-bezier(.25, 1, .25, 1);
+        transition-delay: 0.3s;
+    }
+
+    .twitter:hover {
+         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    }
+
+    .fx {
+        border: 1px solid transparent;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        max-height: 300px;
+        width: 500px;
+        border-radius: 7px;
+        background: white;
+        text-align: center;
+        font-family: "Questrial";
+        background: white;
+        background-image: url(https://myrealdomain.com/images/dust-and-scratches-clipart.png);
+        color: black;
+        background-size: contain;
+        font-size: 25x;
+        padding: 10px 10px;
+        text-align: left;
+        cursor: context-menu;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23), 0px 0px 20px rgba(0,0,0,0.19);
+        transition: all .4s cubic-bezier(.25,.8,.25,1);
+    }
+    .fx:hover {
+        box-shadow: 20px 20px 0px 0px #e2e1e0,
+                    20px 20px 10px 500px black;
+        transform: scale(1.6);                       /* LMAOOooOoO */
+        border: 2px solid black;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        color: black;
+        background-image: url(https://myrealdomain.com/images/dust-and-scratches-clipart.png);
+        background-size: contain;
+
+        
+    }
+
+    .code {
+        border: 0px solid black;
+        margin: 30px auto;
+        padding-top: 0px;
+        padding-bottom: 17px;
+        text-shadow: 4.5px -2px 0px black;
+        width: 300px;
+        height: 10px;
+        text-align: center;
+
+    }
+    .code:hover {
+        background-color: black;
+    }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80313533-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-80313533-1');
+    </script>
     <script src="https://kit.fontawesome.com/af18556798.js" crossorigin="anonymous"></script>
 </head>
 
@@ -209,21 +293,23 @@
         <div class="font-effect-anaglyph" id="head" title="L(&deg;o&deg;L)">>>> dark mode <sub>but not so useful</sub>
             <<<</div> </h1> <div class="para">
                 <p>
-                    <center><div class="banner">
-                        <center><span>a super underrated artist</span></center></center>
-                    </div>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
                     <center>
-                        <div class="spotify">
-                            <center><iframe src="https://open.spotify.com/embed/user/guywithaniphone5s/playlist/6Qyl2qxID7oy6JzTcfT7zm" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></center>
-                </p>
+                        <div class="banner">
+                            <center><span>my spotify wrapped 2019</span></center>
+                    </center>
         </div>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
         <center>
-            <div class="help">× hover for 8-bit effect.</div>
-        </center><br>
+            <div class="spotify" id="embed">
+                <center><iframe src="https://open.spotify.com/embed/user/guywithaniphone5s/playlist/37i9dQZF1Etb9zRRWvZgjY" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></center>
+                </p>
+            </div>
+            <center>
+                <div class="help">× hover for 8-bit effect.</div>
+            </center><br>
         </center>
         <center>
-            <div class="yt">
+            <div class="yt" id="embed">
                 <div><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Cgu6jBDy-BM?controls=1&rel=0&modestbranding=1&fs=0&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
             </div>
@@ -231,11 +317,20 @@
         <center>
             <div class="help">× hover for 3 seconds to enlarge.</div>
         </center><br>
+        <center><div class="twitter" id="embed"><blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">my decade on <a href="https://twitter.com/Spotify?ref_src=twsrc%5Etfw">@spotify</a> although it’s only 4 years lol <a href="https://twitter.com/hashtag/spotifywrapped?src=hash&amp;ref_src=twsrc%5Etfw">#spotifywrapped</a>. <a href="https://t.co/tsmbdzX6aO">https://t.co/tsmbdzX6aO</a></p>&mdash; tejas (@tejxv) <a href="https://twitter.com/tejxv/status/1202576325426302976?ref_src=twsrc%5Etfw">December 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div></center>
+        <center>
+            <div class="help">× the chidiya app.</div>
+        </center><br>
+        <center><div class="fx">"That inspirational quote you posted cured my clinical depression and helped me get focused on what's really important"<br><i>- said no one ever</i></div></center>
+        <center>
+            <div class="help">× aaj ka gyaan.</div>
+        </center><br>
         <div class="socials">
             <div id="foot"><a href="https://twitter.com/tejxv" title="sike! u thot" class="button" target="_blank" style="text-decoration: none">CSS3 powered hover effects<br>made by <i class="fab fa-twitter fa-lg"></i> @tejxv<br>
                     <div class="desktop">best viewed on desktop</div>
                 </a></div>
         </div>
+        <center><div class="code"><a href="https://github.com/tejxv/css/blob/master/index.html" title="css + html" target="_blank" style="text-decoration: none; color: gold;">SOURCE CODE</a></div></center>
 </body>
 
 </html>
